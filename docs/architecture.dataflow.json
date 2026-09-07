@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "diagram_type": "dataflow",
+  "meta": {
+    "title": "krkrz Engine Architecture",
+    "subtitle": "Kirikiri Z (KRKRZ) cross-platform visual-novel engine: TJS2 VM, media backends, rendering pipeline, and platform abstraction",
+    "locale": "en",
+    "output": "docs/architecture.html",
+    "viewBox": [1120, 720],
+    "animation": "trace",
+    "visual_preset": "signal-flow",
+    "quality_profile": "showcase",
+    "views": [
+      { "id": "startup", "label": "Engine Startup", "focus": ["platform", "tjs2", "movie", "visual", "sound"], "note": "Platform bootstrap loads the TJS2 VM; subsystems attach through the engine registry." },
+      { "id": "render", "label": "Rendering Pipeline", "focus": ["visual", "platform"], "note": "Layered renderer composites sprites/layers and pushes frames to the SDL2/GL backend." },
+      { "id": "media", "label": "Media Playback", "focus": ["sound", "movie", "tjs2"], "note": "Sound and movie backends decode BGM/SE/OP and feed the mixer/overlay." }
+    ],
+    "legend": {
+      "mode": "auto",
+      "entries": {
+        "emphasis": { "label": "primary data path" },
+        "security": { "label": "platform boundary" }
+      }
+    }
+  },
+  "stages": [
+    { "label": "Platform" },
+    { "label": "Engine Core" },
+    { "label": "Rendering / Media" }
+  ],
+  "nodes": [
+    { "id": "platform", "type": "external", "label": "Platform Layer", "sublabel": "SDL2 / native ports", "stage": 0, "row": 1 },
+    { "id": "tjs2", "type": "backend", "label": "TJS2 VM", "sublabel": "interpreter + runtime", "stage": 1, "row": 1 },
+    { "id": "visual", "type": "backend", "label": "visual", "sublabel": "layered renderer", "stage": 2, "row": 0 },
+    { "id": "sound", "type": "backend", "label": "sound", "sublabel": "FAudio / SDL audio", "stage": 2, "row": 1 },
+    { "id": "movie", "type": "backend", "label": "movie", "sublabel": "video overlay", "stage": 2, "row": 2 }
+  ],
+  "flows": [
+    { "from": "platform", "to": "tjs2", "label": "bootstrap entry", "variant": "security" },
+    { "from": "tjs2", "to": "visual", "label": "render commands", "variant": "emphasis" },
+    { "from": "tjs2", "to": "sound", "label": "play BGM/SE", "variant": "emphasis" },
+    { "from": "tjs2", "to": "movie", "label": "play OP / intro", "variant": "emphasis" }
+  ],
+  "cards": [
+    { "dot": "cyan", "title": "Cross-Platform Surface", "items": ["SDL2 primary backend (Windows/macOS/Linux)", "Native ports: Android, iOS, OpenHarmony", "Shared C++ core, per-platform adaptation"] },
+    { "dot": "emerald", "title": "Media Pipeline", "items": ["FAudio mixer for BGM/SE (Suspend/Resume parity)", "Video overlay with 0.5s late relayout", "On-background suspend, delayed resume (no pop)"] },
+    { "dot": "rose", "title": "Extensibility", "items": ["TJS2 plugin registry for native modules", "Layer-based visual compositor", "Scene graph driven by script"] }
+  ]
+}
