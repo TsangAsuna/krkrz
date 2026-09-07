@@ -3,14 +3,14 @@
 [English](README.md) | [中文](README_zh.md)
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Language](https://img.shields.io/badge/language-C%2B%2B-blue)](https://en.wikipedia.org/wiki/C%2B%2B)
+[![Language](https://img.shields.io/badge/language-C%2B%2B-blue?logo=cplusplus&logoColor=white)](https://en.wikipedia.org/wiki/C%2B%2B)
 [![TJS2 Scripting](https://img.shields.io/badge/scripting-TJS2-8A2BE2)](https://en.wikipedia.org/wiki/KiriKiri)
-[![Platform - Windows](https://img.shields.io/badge/platform-Windows-0078D6)](https://github.com/TsangAsuna/krkrz)
-[![Platform - macOS / Linux](https://img.shields.io/badge/platform-macOS%20%2F%20Linux-333333)](https://github.com/TsangAsuna/krkrz)
-[![Platform - Android](https://img.shields.io/badge/platform-Android-3DDC84)](https://github.com/TsangAsuna/krkrz)
-[![Platform - iOS](https://img.shields.io/badge/platform-iOS-000000)](https://github.com/TsangAsuna/krkrz)
+[![Platform - Windows](https://img.shields.io/badge/platform-Windows-0078D6?logo=windows&logoColor=white)](https://github.com/TsangAsuna/krkrz)
+[![Platform - macOS / Linux](https://img.shields.io/badge/platform-macOS%20%2F%20Linux-333333?logo=apple&logoColor=white)](https://github.com/TsangAsuna/krkrz)
+[![Platform - Android](https://img.shields.io/badge/platform-Android-3DDC84?logo=android&logoColor=white)](https://github.com/TsangAsuna/krkrz)
+[![Platform - iOS](https://img.shields.io/badge/platform-iOS-000000?logo=apple&logoColor=white)](https://github.com/TsangAsuna/krkrz)
 [![Platform - OpenHarmony](https://img.shields.io/badge/platform-OpenHarmony-107C10)](https://github.com/TsangAsuna/krkrz)
-[![Build - SDL2](https://img.shields.io/badge/build-SDL2-5C2D91)](https://github.com/TsangAsuna/krkrz)
+[![Build - SDL2](https://img.shields.io/badge/build-SDL2-5C2D91?logo=sdl&logoColor=white)](https://github.com/TsangAsuna/krkrz)
 [![Audio - FAudio](https://img.shields.io/badge/audio-FAudio-007ACC)](https://github.com/TsangAsuna/krkrz)
 
 krkrz is a cross-platform visual-novel engine derived from
