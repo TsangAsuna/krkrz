@@ -61,7 +61,7 @@ data/
 ```
 ; start.ks
 *start
-「こんにちは、世界。」
+Ciallo～(∠・ω< )⌒☆
 @close message
 ```
 
