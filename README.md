@@ -1,5 +1,7 @@
 # krkrz (Kirikiri Z / KiriKiri Z)
 
+[English](README.md) | [中文](README_zh.md)
+
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 krkrz is a cross-platform visual-novel engine derived from
