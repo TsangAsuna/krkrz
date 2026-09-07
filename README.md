@@ -37,7 +37,8 @@ runtime around your own scenario data.
 
 The interactive diagram is generated from
 [`docs/architecture.dataflow.json`](docs/architecture.dataflow.json) using
-the Archify renderer.
+the [Archify](https://github.com/tt-a1i/archify) renderer (JSON-IR to
+HTML/SVG/PNG diagrams).
 
 ## Quick Start
 

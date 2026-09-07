@@ -27,7 +27,7 @@ krkrz 是基于 [吉里吉里Z](https://github.com/krkrz/krkrz) 衍生的跨平�
 
 ![krkrz engine architecture](docs/architecture.png)
 
-交互式图表由 [`docs/architecture.dataflow.json`](docs/architecture.dataflow.json) 经 Archify 渲染器生成。
+交互式图表由 [`docs/architecture.dataflow.json`](docs/architecture.dataflow.json) 经 [Archify](https://github.com/tt-a1i/archify) 渲染器生成（JSON-IR 转 HTML/SVG/PNG 图表）。
 
 ## 快速开始
 
