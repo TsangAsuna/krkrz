@@ -80,7 +80,7 @@ inside `data/scenario/`, written in KAG/KAGEX syntax:
 ```
 ; start.ks
 *start
-Ciallo～(∠・ω< )⌒☆
+Ciallo～(∠・ω< )⌒☆，世界。
 @close message
 ```
 
