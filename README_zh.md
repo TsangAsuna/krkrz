@@ -61,7 +61,7 @@ data/
 ```
 ; start.ks
 *start
-Ciallo～(∠・ω< )⌒☆，世界。
+「Ciallo～(∠・ω< )⌒☆，世界。」
 @close message
 ```
 
