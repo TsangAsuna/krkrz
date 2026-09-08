@@ -1,4 +1,4 @@
-# krkrz (Kirikiri Z / KiriKiri Z)
+# krkrz (Kirikiri Z)
 
 [English](README.md) | [中文](README_zh.md)
 
